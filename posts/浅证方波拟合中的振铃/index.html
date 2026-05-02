@@ -935,39 +935,6 @@
   class="heading-anchor"
   aria-label="Link to this section"
 ><svg class="h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></g></svg></a></h2><p>在调试ADC、TIA等高速信号链时，如果你用示波器去观察方波信号的跳变沿，往往会看到边缘处存在烦人的振铃现象（Ringing）。我们常以为这是电路寄生参数或是带宽受限导致的非理想效应，但其实，即便在纯粹的数学世界里，用完美的正弦波去拟合方波，这种过冲也是命中注定的。</p>
-<p>
-<figure
-  class="image-figure not-prose my-8"
-  data-lightbox-enabled="
-    true
-  "
-  data-gallery-type="auto"
-  data-image-width="3815"
-  data-image-height="2135"
-  data-image-src="/posts/%E6%B5%85%E8%AF%81%E6%96%B9%E6%B3%A2%E6%8B%9F%E5%90%88%E4%B8%AD%E7%9A%84%E6%8C%AF%E9%93%83/assets/index.zh-cn.md/img-20260414211523.png"
->
-  <div class="image-container">
-    <img
-    src="/posts/%E6%B5%85%E8%AF%81%E6%96%B9%E6%B3%A2%E6%8B%9F%E5%90%88%E4%B8%AD%E7%9A%84%E6%8C%AF%E9%93%83/assets/index.zh-cn.md/img-20260414211523.png"
-    alt="Img"
-    
-    
-      
-      
-        
-          width="3815" height="2135"
-        
-      
-    
-    loading="lazy"
-    decoding="async"
-    data-gallery-src="/posts/%E6%B5%85%E8%AF%81%E6%96%B9%E6%B3%A2%E6%8B%9F%E5%90%88%E4%B8%AD%E7%9A%84%E6%8C%AF%E9%93%83/assets/index.zh-cn.md/img-20260414211523.png"
-    data-gallery-alt="Img"
-    data-gallery-title=""
-  /></div>
-
-  </figure>
-</p>
 <p>这就是著名的<strong>吉布斯现象（Gibbs Phenomenon）</strong>：当我们用很多项光滑的波去逼近一个有跳变的方波时，边缘总会多冲。更反直觉的是，大力出不了奇迹——随着叠加的项数越来越多，振荡区域确实会变窄，但过冲的高度比例却会收敛到一个非零常数值，而非一直变小。</p>
 <p>具体而言，设函数：</p>
 $$
